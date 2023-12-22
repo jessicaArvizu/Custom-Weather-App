@@ -38,7 +38,8 @@ a {
         font-size: 16px;
         padding: 10px 15px;
         width: 100%;
-        &:focus{
+
+        &:focus {
             color: $white;
         }
     }
@@ -57,14 +58,14 @@ a {
 
 main {
     margin-top: 20px;
-    .row-city {
-        .weather-app-city {
-            font-weight: 700;
-            margin: 0;
-            font-size: 38px;
-            line-height: 48px;
-        }
+
+    .weather-app-city {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 48px;
+        border-bottom: 1px solid $items;
     }
+
 
     .row-weather-app-temperature {
         .weather-app-temperature {
@@ -93,6 +94,10 @@ main {
 
     .weather-app-icon {
         font-size: 8em;
+        img{
+            width: 200px;
+            height: auto;
+        }
     }
 }
 

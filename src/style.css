@@ -48,11 +48,11 @@ a {
 main {
   margin-top: 20px;
 }
-main .row-city .weather-app-city {
+main .weather-app-city {
   font-weight: 700;
-  margin: 0;
   font-size: 38px;
   line-height: 48px;
+  border-bottom: 1px solid #36404e;
 }
 main .row-weather-app-temperature .weather-app-temperature {
   font-size: 5em;
@@ -72,6 +72,10 @@ main .row-weather-details .weather-app-details strong {
 }
 main .weather-app-icon {
   font-size: 8em;
+}
+main .weather-app-icon img {
+  width: 200px;
+  height: auto;
 }
 
 footer {
