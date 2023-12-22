@@ -1,5 +1,5 @@
 /* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
 /* Colors */
 body {
   background-color: #0C131E;
@@ -27,15 +27,18 @@ a {
   background-color: #36404e;
   border: none;
   border-radius: 6px;
-  width: 80%;
-  font-size: 16px;
-  padding: 15px 20px;
   width: 100%;
+  font-size: 16px;
+  padding: 10px 15px;
+  width: 100%;
+}
+.search-form .search-form-input:focus {
+  color: #FFFAFA;
 }
 .search-form .search-form-button {
   width: 100%;
   background: #885df1;
-  padding: 15px 30px;
+  padding: 10px 15px;
   border: none;
   font-size: 15px;
   border-radius: 6px;
@@ -46,6 +49,7 @@ main {
   margin-top: 20px;
 }
 main .row-city .weather-app-city {
+  font-weight: 700;
   margin: 0;
   font-size: 38px;
   line-height: 48px;
@@ -55,10 +59,11 @@ main .row-weather-app-temperature .weather-app-temperature {
   font-weight: bold;
 }
 main .row-weather-app-temperature .weather-app-unit {
+  margin-top: 10px;
   font-size: 2em;
 }
 main .row-weather-details .weather-app-details {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
   font-weight: 500;
 }
