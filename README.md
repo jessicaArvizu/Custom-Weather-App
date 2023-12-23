@@ -58,6 +58,7 @@ The Weather App challenge requires participants to create a functional and aesth
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- Vanilla JavaScript
 - [Sass](https://sass-lang.com/)
 - [BootStrap](https://getbootstrap.com/) 
 - [SheCodes](https://www.shecodes.io/) - Exclusive Weather API.
