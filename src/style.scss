@@ -4,7 +4,8 @@
 $main: #0C131E;
 $surfaces: #202B3B;
 $items: #36404e;
-$accent: #885df1;
+$accent: #F15DC6;
+$accent-darker: #d6129d;
 $white: #FFFAFA;
 
 body {
@@ -14,7 +15,11 @@ body {
 }
 
 a {
-    color: #885df1;
+    color: $accent;
+
+    &:visited{
+        color: $accent-darker;
+    }
 }
 
 .weather-app {
@@ -26,10 +31,15 @@ a {
     padding: 30px;
 }
 
+form, input {
+    color: $white !important;
+}
+
 
 .search-form {
     width: 100%;
-
+    border-bottom: 1px solid $items;
+    
     .search-form-input {
         background-color: $items;
         border: none;
@@ -38,9 +48,11 @@ a {
         font-size: 16px;
         padding: 10px 15px;
         width: 100%;
+        margin-bottom: 20px;
 
         &:focus {
             color: $white;
+            border-color: $accent-darker;
         }
     }
 
@@ -53,6 +65,7 @@ a {
         border-radius: 6px;
         color: $white;
     }
+    
 }
 
 
@@ -63,7 +76,6 @@ main {
         font-weight: 700;
         font-size: 38px;
         line-height: 48px;
-        border-bottom: 1px solid $items;
     }
 
 
@@ -94,16 +106,52 @@ main {
 
     .weather-app-icon {
         font-size: 8em;
-        img{
-            width: 200px;
+
+        img {
+            width: 150px;
             height: auto;
+        }
+    }
+
+    .forecast-row {
+        background-color: $items;
+        border-radius: 15px;
+        padding: 10px;
+
+        .weekly-forecast {
+            margin-top: 10px;
+            text-align: center;
+
+            .daily-weather {
+                font-size: 12px;
+                border-right: 1px solid $surfaces;
+
+                img{
+                    width: 50px;
+                    height: auto;
+                }
+
+                .max-temp{
+                    font-weight: bold;
+                }
+
+                .min-temp{
+                    opacity: 0.5;
+                    font-weight: lighter;
+                }
+
+                &:last-child {
+                    border: none;
+                }
+            }
         }
     }
 }
 
 footer {
+    margin-top: 30px;
     border-top: 1px solid $items;
     padding: 30px 0 0 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }

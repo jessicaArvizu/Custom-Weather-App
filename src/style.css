@@ -8,7 +8,10 @@ body {
 }
 
 a {
-  color: #885df1;
+  color: #F15DC6;
+}
+a:visited {
+  color: #d6129d;
 }
 
 .weather-app {
@@ -20,8 +23,13 @@ a {
   padding: 30px;
 }
 
+form, input {
+  color: #FFFAFA !important;
+}
+
 .search-form {
   width: 100%;
+  border-bottom: 1px solid #36404e;
 }
 .search-form .search-form-input {
   background-color: #36404e;
@@ -31,13 +39,15 @@ a {
   font-size: 16px;
   padding: 10px 15px;
   width: 100%;
+  margin-bottom: 20px;
 }
 .search-form .search-form-input:focus {
   color: #FFFAFA;
+  border-color: #d6129d;
 }
 .search-form .search-form-button {
   width: 100%;
-  background: #885df1;
+  background: #F15DC6;
   padding: 10px 15px;
   border: none;
   font-size: 15px;
@@ -52,7 +62,6 @@ main .weather-app-city {
   font-weight: 700;
   font-size: 38px;
   line-height: 48px;
-  border-bottom: 1px solid #36404e;
 }
 main .row-weather-app-temperature .weather-app-temperature {
   font-size: 5em;
@@ -68,21 +77,49 @@ main .row-weather-details .weather-app-details {
   font-weight: 500;
 }
 main .row-weather-details .weather-app-details strong {
-  color: #885df1;
+  color: #F15DC6;
 }
 main .weather-app-icon {
   font-size: 8em;
 }
 main .weather-app-icon img {
-  width: 200px;
+  width: 150px;
   height: auto;
+}
+main .forecast-row {
+  background-color: #36404e;
+  border-radius: 15px;
+  padding: 10px;
+}
+main .forecast-row .weekly-forecast {
+  margin-top: 10px;
+  text-align: center;
+}
+main .forecast-row .weekly-forecast .daily-weather {
+  font-size: 12px;
+  border-right: 1px solid #202B3B;
+}
+main .forecast-row .weekly-forecast .daily-weather img {
+  width: 50px;
+  height: auto;
+}
+main .forecast-row .weekly-forecast .daily-weather .max-temp {
+  font-weight: bold;
+}
+main .forecast-row .weekly-forecast .daily-weather .min-temp {
+  opacity: 0.5;
+  font-weight: lighter;
+}
+main .forecast-row .weekly-forecast .daily-weather:last-child {
+  border: none;
 }
 
 footer {
+  margin-top: 30px;
   border-top: 1px solid #36404e;
   padding: 30px 0 0 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
