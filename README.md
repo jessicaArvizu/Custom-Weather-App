@@ -48,7 +48,7 @@ The Weather App challenge requires participants to create a functional and aesth
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://vocal-valkyrie-8703d3.netlify.app/)
+- Live Site URL: [Weather App](https://vocal-valkyrie-8703d3.netlify.app/)
 
 ## My process
 
